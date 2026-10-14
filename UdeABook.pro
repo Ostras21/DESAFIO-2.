@@ -8,11 +8,17 @@ SOURCES += \
     Medicion.cpp \
     Texto.cpp \
     Fecha.cpp \
-    MatrizBits.cpp
+    MatrizBits.cpp \
+    Mensaje.cpp \
+    Foto.cpp \
+    Album.cpp
 
 HEADERS += \
     Medicion.h \
     Texto.h \
     Fecha.h \
     ListaDinamica.h \
-    MatrizBits.h
+    MatrizBits.h \
+    Mensaje.h \
+    Foto.h \
+    Album.h
