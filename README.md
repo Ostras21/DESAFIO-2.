@@ -1,5 +1,7 @@
 # UdeABook
 
+VIDEO YOUTUBE: https://youtu.be/zJrPYpVzux4?si=ZPmgs-i7mDqKp0Jk
+
 Desafío II de Informática II (Universidad de Antioquia, 2026-2).
 
 Capa lógica de una red social básica hecha con programación orientada a objetos en C++:
