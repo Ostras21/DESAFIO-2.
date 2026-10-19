@@ -13,7 +13,9 @@ SOURCES += \
     Foto.cpp \
     Album.cpp \
     Usuario.cpp \
-    RedSocial.cpp
+    RedSocial.cpp \
+    Archivos.cpp \
+    Menu.cpp
 
 HEADERS += \
     Medicion.h \
@@ -25,4 +27,6 @@ HEADERS += \
     Foto.h \
     Album.h \
     Usuario.h \
-    RedSocial.h
+    RedSocial.h \
+    Archivos.h \
+    Menu.h
