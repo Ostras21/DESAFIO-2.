@@ -11,7 +11,9 @@ SOURCES += \
     MatrizBits.cpp \
     Mensaje.cpp \
     Foto.cpp \
-    Album.cpp
+    Album.cpp \
+    Usuario.cpp \
+    RedSocial.cpp
 
 HEADERS += \
     Medicion.h \
@@ -21,4 +23,6 @@ HEADERS += \
     MatrizBits.h \
     Mensaje.h \
     Foto.h \
-    Album.h
+    Album.h \
+    Usuario.h \
+    RedSocial.h
