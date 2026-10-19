@@ -8,9 +8,8 @@
 #include "Usuario.h"
 #include "Mensaje.h"
 
-// esta clase es la dueña de los usuarios y de los mensajes: los crea con new
-// y los borra en el destructor. la amistad y las solicitudes se guardan en dos
-// matrices de bits para poder preguntar si dos personas son amigas en un paso
+// dueña de los usuarios y de los mensajes: los crea con new y los borra en
+// el destructor. la amistad y las solicitudes van en matrices de bits
 class RedSocial {
 private:
     ListaDinamica<Usuario*> usuarios;
@@ -25,8 +24,7 @@ private:
     int sesion;
 
     void ordenarIndice(int* arreglo, int inicio, int fin, int* apoyo);
-    // devuelve la primera posicion de la lista con fecha mayor o igual a la
-    // buscada; la lista esta ordenada porque los mensajes se agregan en orden
+    // primera posicion con fecha mayor o igual; la lista ya esta ordenada
     static int primeroDesde(const ListaDinamica<Mensaje*>& lista, const Fecha& desde);
     static int pesoPorComunes(int comunes);
 

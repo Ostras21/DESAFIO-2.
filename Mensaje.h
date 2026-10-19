@@ -4,8 +4,7 @@
 #include "Texto.h"
 #include "Fecha.h"
 
-// un mensaje guarda los indices del emisor y del receptor, no los punteros,
-// asi ocupa menos y sirve igual para buscar al usuario en la red
+// el mensaje guarda los indices del emisor y del receptor, no punteros
 class Mensaje {
 private:
     int emisor;

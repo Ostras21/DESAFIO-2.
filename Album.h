@@ -5,8 +5,7 @@
 #include "ListaDinamica.h"
 #include "Foto.h"
 
-// las fotos se guardan por valor dentro del album porque el album es el dueño
-// de ellas y no se comparten con nadie mas
+// el album es el dueño de sus fotos, por eso van por valor
 class Album {
 private:
     Texto nombre;

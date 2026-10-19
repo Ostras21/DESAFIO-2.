@@ -7,9 +7,8 @@
 #include "Album.h"
 #include "Mensaje.h"
 
-// los albumes son del usuario y se guardan por valor.
-// los mensajes no: esos son de la red social y aqui solo se guardan punteros
-// para no tener el mismo mensaje dos veces en memoria
+// los albumes van por valor; de los mensajes solo se guardan punteros porque
+// el mismo mensaje le sirve al emisor y al receptor
 class Usuario {
 private:
     Texto nombre;

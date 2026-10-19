@@ -100,8 +100,7 @@ RedSocial* Archivos::cargar() const {
     }
     archivo.close();
 
-    // el indice por nombre se arma aqui, una sola vez, y de ahi en adelante
-    // todas las busquedas por nombre son binarias
+    // el indice por nombre se arma una sola vez, aqui
     red->construirIndice();
 
     cargarAmistades(red);

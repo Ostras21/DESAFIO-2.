@@ -11,8 +11,7 @@ class Archivos {
 private:
     Texto carpeta;
 
-    // copia el campo que empieza en la posicion desde y devuelve donde
-    // arranca el siguiente
+    // copia el campo que empieza en desde y devuelve donde arranca el siguiente
     static int siguienteCampo(const char* linea, int desde, char* destino, int maximo);
     static int aEntero(const char* texto);
     static Fecha leerFecha(const char* texto);

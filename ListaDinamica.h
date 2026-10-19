@@ -3,8 +3,8 @@
 
 #include "Medicion.h"
 
-// arreglo dinamico que duplica su capacidad cuando se llena,
-// asi agregar al final cuesta O(1) en promedio
+// arreglo dinamico que duplica su capacidad cuando se llena, asi casi
+// nunca toca copiar todo al agregar
 template <typename T>
 class ListaDinamica {
 private:

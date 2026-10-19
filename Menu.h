@@ -4,9 +4,8 @@
 #include "RedSocial.h"
 #include "ListaDinamica.h"
 
-// se encarga de hablar con el usuario por consola.
-// en grupoFotos queda el ultimo grupo de fotos de perfil que se mostro, para
-// que al actualizar no vuelvan a salir las mismas
+// la unica clase que habla con la consola. en grupoFotos queda el ultimo
+// grupo de fotos de perfil que se mostro, para no repetirlo al actualizar
 class Menu {
 private:
     RedSocial* red;

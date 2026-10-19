@@ -93,8 +93,7 @@ void Menu::mostrarFotosPerfil() {
         cout << "  no quedan usuarios nuevos por mostrar" << endl;
     }
 
-    // el grupo que se acaba de mostrar queda guardado para excluirlo la
-    // proxima vez que se actualice
+    // se guarda el grupo mostrado para excluirlo la proxima vez
     while (grupoFotos.tam() > 0) {
         grupoFotos.eliminar(grupoFotos.tam() - 1);
     }

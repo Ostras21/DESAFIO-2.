@@ -5,9 +5,8 @@
 #include "Fecha.h"
 #include "ListaDinamica.h"
 
-// la foto no guarda la ruta, esa se arma cuando se necesita.
-// en likes se guardan los indices de los usuarios que dieron me gusta,
-// asi se puede quitar el like y no solo contarlos
+// la ruta no se guarda, se arma cuando se necesita. en likes quedan los
+// indices de los que dieron me gusta, para poder quitarlo despues
 class Foto {
 private:
     Texto nombre;
@@ -26,8 +25,7 @@ public:
     int getLike(int i) const;
 
     bool tieneLike(int usuario) const;
-    // pone el like si no estaba y lo quita si ya estaba, en un solo recorrido.
-    // devuelve true si quedo con like
+    // si no estaba lo pone y si estaba lo quita; true si quedo con like
     bool cambiarLike(int usuario);
 
     long memoriaDinamica() const;

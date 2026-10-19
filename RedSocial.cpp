@@ -141,8 +141,6 @@ void RedSocial::construirIndice() {
 }
 
 int RedSocial::buscarUsuario(const Texto& nombre) {
-    // el indice se ordena una sola vez y de ahi en adelante cada busqueda
-    // va partiendo el arreglo a la mitad
     if (!indiceListo) {
         construirIndice();
     }
@@ -267,7 +265,7 @@ void RedSocial::sugerirAmigos(int u, int k, ListaDinamica<int>& destino,
         } else {
             continue;
         }
-        // lo sube hasta su puesto; la lista es de maximo k, que es pequeña
+        // lo sube hasta su puesto
         int p = destino.tam() - 1;
         while (p > 0 && comunes[p - 1] < comunes[p]) {
             Medicion::contar();
@@ -322,8 +320,8 @@ void RedSocial::fotosDePerfil(int u, int cantidad, ListaDinamica<int>& grupo,
         suma += p;
     }
 
-    // sorteo acumulado: se tira un numero entre 0 y la suma de los pesos y se
-    // va sumando hasta pasarlo, asi el que mas peso tiene sale mas veces
+    // se tira un numero entre 0 y la suma de los pesos y se avanza hasta
+    // pasarlo, asi el que mas peso tiene sale mas veces
     for (int t = 0; t < cantidad && suma > 0; t++) {
         int tiro = rand() % suma;
         int acumulado = 0;
